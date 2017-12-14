@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spring MVC</title>
+    </head>
+    <body>
+        <h1>Test de Spring MVC</h1>
+        <p>Bonjour tout le monde</p>
+        
+        Joueur 1 : {{gm.nom1}} <br/>
+        Joueur 2 : {{gm.nom2}}
+        
+        <br/>
+        <table border="1px">
+        	<tbody>
+        		{{#gm.tableau}}
+        			<tr>
+        				{{#.}}
+        					<td>{{.}}</td>
+        				{{/.}}
+        			</tr>
+        		{{/gm.tableau}}
+        	</tbody>
+        </table>
+        
+    </body>
+</html>
